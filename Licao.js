@@ -79,17 +79,37 @@ const escola  = {
 
 }; 
 
-console.log(`A escola ${escola.nome} está localizada na cidade de ${escola.cidade} e funciona no turno da ${escola.turno}.`);
+
+const Usuario = {
+  usuario: "nikolas silva",
+  senha: "1234",
+  nome: "Nikolas Silva",
+  email: "nikolassilvamatos@email.com",
+  nivel: "administrador",
+  curso: "Desenvolvimento de Sistemas",
+  turma: "DS 1 ",
+  idade: 18
+};
+
+    
+console.log("Nome do usuário:", Usuario.usuario);
+console.log("Nome completo:", Usuario.nome);
+console.log("E-mail:", Usuario.email);
+console.log("Curso:", Usuario.curso);
+console.log("Turma:", Usuario.turma);
+console.log("Idade:", Usuario.idade);
+console.log("Nível de acesso:", Usuario.nivel);
+console.log("Senha:", Usuario.senha);
 
 
-const brasil = {
- Eleitores: 1000000,        
- Votaram: 800000, 
- NãoVotaram: 200000, 
+const mensagem = `O usuário ${Usuario.usuario}, de ${Usuario.idade} anos, está matriculado no curso de ${Usuario.curso}, turma ${Usuario.turma}. Seu nível de acesso é ${Usuario.nivel} e seu e-mail é ${Usuario.email}. A senha cadastrada é ${Usuario.senha}.`;
+
+console.log(mensagem);
 
 
 
-}; 
 
-console.log(`No Brasil, existem ${brasil.Eleitores} eleitores, dos quais ${brasil.Votaram} votaram e ${brasil.NãoVotaram} não votaram.`);
+
+
+
 
